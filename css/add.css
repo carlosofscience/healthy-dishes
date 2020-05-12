@@ -6,7 +6,7 @@ main .wrapper *{
 form {
   display: flex;
   flex-flow: column;
-  padding: 3em;
+  padding: 0 3em;
   background-color: #fff;
 
 }
@@ -15,7 +15,6 @@ form {
     display: flex;
     flex-flow: row;
     border-radius: 25px;
-    padding: 0 3em;
 }
 
 
@@ -94,8 +93,19 @@ input{
   width: 100%;
   padding: 1em;
   border: none;
+  position: relative;
 }
 
 .ingredients input:nth-child(even){
   background-color: #f6f6f6;
+}
+
+.ingredients input::after{
+  content:'CLICK TO DELETE';
+  width: 100px;
+  height: 1em;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
