@@ -5,12 +5,17 @@ main .wrapper *{
 
 form {
   display: flex;
-  flex-flow: row;
-  min-height: 70vh;
-  margin: 3em;
-  background-color: white;
-  border-radius: 25px;
+  flex-flow: column;
   padding: 3em;
+  background-color: #fff;
+
+}
+
+.main-inputs {
+    display: flex;
+    flex-flow: row;
+    border-radius: 25px;
+    padding: 0 3em;
 }
 
 
@@ -32,6 +37,7 @@ input{
   border: none;
   border-bottom: 2px solid gray;
   font-size: 18px;
+  width: ;
 }
 
 .dish-info input{
@@ -65,8 +71,9 @@ input{
   bottom: 0;
   width: 100%;
   padding: 1em;
-  background-color: #fff;
-
+  border-radius: 0 0 20px 20px;
+  border: none;
+    background-color: #fff;
 }
 
 .new-ingredient-input input{
@@ -75,4 +82,20 @@ input{
 
 .new-ingredient-input div {
   margin-left: 30px;
+}
+
+.ingredients{
+  padding: 3em;
+  display: flex;
+  flex-flow: column-reverse;
+}
+
+.ingredients input{
+  width: 100%;
+  padding: 1em;
+  border: none;
+}
+
+.ingredients input:nth-child(even){
+  background-color: #f6f6f6;
 }

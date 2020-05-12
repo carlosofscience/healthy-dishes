@@ -21,21 +21,25 @@
   <main>
     <div class="wrapper">
         <form action="POST">
-          
-          <div class="img-preview">
-            <input type="file" name="fileToUpload" id="fileToUpload">
-          </div>
-          <div class="dish-info">
-            <button class="btn">ADD NEW DISH</button>
-            <input type="text" name="name">
-            <textarea name="description" id="" cols="30" rows="10"></textarea>
-            <div class="ingredients-input ">
+          <div class="main-inputs">
+            <div class="img-preview">
+              <input type="file" name="fileToUpload" id="fileToUpload">
+            </div>
+            <div class="dish-info">
+              <button class="btn">ADD NEW DISH</button>
+              <input type="text" name="name" placeholder="Dish Name">
+              <textarea name="description" id="" cols="30" rows="10" placeholder="add a description..."></textarea>
               <div class="new-ingredient-input">
-                <input type="text" name="name">
+                <input type="text" name="name" placeholder="new ingredient">
                 <div class="btn">ADD</div>
               </div>
-              
             </div>
+          </div>
+          <div class="ingredients">
+            <input type="text" value="ingredient 1" class="added">
+            <input type="text" value="ingredient 2" class="added">
+            <input type="text" value="ingredient 3" class="added">
+            <input type="text" value="ingredient 4" class="added">
           </div>
         </form>
     </div>
