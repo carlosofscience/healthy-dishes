@@ -1,0 +1,78 @@
+main .wrapper *{
+    /* outline: 1px solid red; */
+}
+
+
+form {
+  display: flex;
+  flex-flow: row;
+  min-height: 70vh;
+  margin: 3em;
+  background-color: white;
+  border-radius: 25px;
+  padding: 3em;
+}
+
+
+.img-preview{
+  flex: 1;
+  position: relative;
+  max-height: 400px;
+  background-color: #f9f9f9;
+}
+
+.dish-info{
+  flex:1;
+  padding: 2em;
+  display: flex;
+  flex-flow: column;
+}
+
+input{
+  border: none;
+  border-bottom: 2px solid gray;
+  font-size: 18px;
+}
+
+.dish-info input{
+  padding: 0.5em;
+  margin-bottom: 1em;
+  box-sizing: content-box;
+}
+
+.dish-info button{
+  width: 130px;
+  margin-bottom: 2em;
+  align-self: flex-end;
+}
+.dish-info textarea{
+  padding: 1em;
+  margin: 2em 0;
+  resize: none;
+  border-radius: 20px;
+  border: none;
+  background-color: #f6f6f6;
+}
+.img-preview{
+  margin-top: 6em;
+  border: 4px dashed gray;
+  border-radius: 20px;
+}
+
+.img-preview input{
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  width: 100%;
+  padding: 1em;
+  background-color: #fff;
+
+}
+
+.new-ingredient-input input{
+  width: calc(100% - 2em - 100px);
+}
+
+.new-ingredient-input div {
+  margin-left: 30px;
+}
